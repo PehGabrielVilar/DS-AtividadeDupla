@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Atividade;
 
-/**
- *
- * @author LABORATORIO_INFO
- */
+import javax.swing.*;
+
 public class Exercicio02 {
-    
+
+    public static void main(String[] args) {
+        String aux = "";
+        double 
+        
+        aux = JOptionPane.showInputDialog(null, "");
+         = Double.parseDouble(aux);
+        aux = aux.replace(",", ".");
+    }
+
 }
