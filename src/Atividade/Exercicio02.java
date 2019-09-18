@@ -17,7 +17,7 @@ public class Exercicio02 {
             prest = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
 
-            res = prest /(sbruto / 100);
+            res = prest /(sbruto / 100); 
             
             if (res >= 0 && res <= 30) {
                 JOptionPane.showMessageDialog(null, "Empréstimo pode ser concedido.");
