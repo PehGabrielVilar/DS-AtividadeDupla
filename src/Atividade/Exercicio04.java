@@ -6,35 +6,21 @@ public class Exercicio04 {
 
     public static void main(String[] args) {
         String aux = "";
-        double num0 = 0, num1 = 0, num2 = 0, num3 = 0, resp = 0;
+        double valor = 1, res = 0;
+        while (valor > 0) {
+            try {
+                aux = JOptionPane.showInputDialog(null, "Digite números positivos: "
+                        + "\n # Digite um número negativo e sua operação encerrara #");
+                valor = Double.parseDouble(aux);
+                res += valor;
 
-        try {
-            
-            if (num0 >= 0 && num1 >= 0 && num2 >= 0 && num3 >= 0){
-            aux = JOptionPane.showInputDialog(null, "");
-            num0 = Double.parseDouble(aux);
-            aux = aux.replace(",", ".");
-
-            aux = JOptionPane.showInputDialog(null, "");
-            num1 = Double.parseDouble(aux);
-            aux = aux.replace(",", ".");
-
-            aux = JOptionPane.showInputDialog(null, "");
-            num2 = Double.parseDouble(aux);
-            aux = aux.replace(",", ".");
-
-            aux = JOptionPane.showInputDialog(null, "");
-            num3 = Double.parseDouble(aux);
-            aux = aux.replace(",", ".");
-
-            resp = num0 + num1 + num2 + num3;
-
-            JOptionPane.showMessageDialog(null, "A soma dos números é: " + resp);  
+            } catch (NumberFormatException erro) {
+                JOptionPane.showMessageDialog(null, "Digite somente números !");
+            } catch (NullPointerException erro) {
+                JOptionPane.showMessageDialog(null, "Digite somente números !");
             }
-
-        } catch (NumberFormatException erro) {
-            JOptionPane.showMessageDialog(null, "Digite somente números !");
-
         }
+        res = (valor * -1) + res;
+        JOptionPane.showMessageDialog(null, "O resultado é: " + res);
     }
 }
