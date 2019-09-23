@@ -7,9 +7,6 @@ public class Exercicio10 {
         String aux = "";
         double tempo = 0, velocidade = 0, distancia = 0, litros = 0, km = 0;
         try {
-            JOptionPane.showMessageDialog(null, "Digite somente números !\n"
-                    + "Exemplo: 2,30");
-
             aux = JOptionPane.showInputDialog(null, "Quanto tempo foi gasto na viagem?");
             aux = aux.replace(",", ".");
             tempo = Double.parseDouble(aux);
