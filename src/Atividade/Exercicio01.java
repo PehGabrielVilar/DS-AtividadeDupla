@@ -10,12 +10,12 @@ public class Exercicio01 {
 
         try {
             aux = JOptionPane.showInputDialog(null, "Insira o seu salário:");
-            valor = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
+            valor = Double.parseDouble(aux);            
 
             aux = JOptionPane.showInputDialog(null, "Insira o percentual de aumento:");
-            porc = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
+            porc = Double.parseDouble(aux);
 
             if (valor < 300.00) {
                 JOptionPane.showMessageDialog(null, "Valor Invalido");

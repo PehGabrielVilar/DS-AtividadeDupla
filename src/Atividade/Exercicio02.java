@@ -6,16 +6,18 @@ public class Exercicio02 {
 
     public static void main(String[] args) {
         String aux = "";
-        double sbruto = 0, prest = 0, porc = 0, res = 0;
+        double sbruto = 0, prest = 0, res = 0;
 
         try {
             aux = JOptionPane.showInputDialog(null, "Digite o seu salário bruto: ");
-            sbruto = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
+            sbruto = Double.parseDouble(aux);
+            
 
             aux = JOptionPane.showInputDialog(null, "Digite o valor da prestação do empréstimo: ");
-            prest = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
+            prest = Double.parseDouble(aux);
+            
 
             res = prest /(sbruto / 100); 
             

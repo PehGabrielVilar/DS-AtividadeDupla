@@ -10,8 +10,9 @@ public class Exercicio03 {
 
         try {
             aux = JOptionPane.showInputDialog(null, "Informe o tamanha do raio da circunferência: ");
-            raio = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
+            raio = Double.parseDouble(aux);
+            
 
             resp = 2 * pi * raio;
 

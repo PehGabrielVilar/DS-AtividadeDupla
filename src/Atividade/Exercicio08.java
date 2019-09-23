@@ -9,12 +9,12 @@ public class Exercicio08 {
         double aulahora = 0, aulames = 0, sbruto = 0, sliquido = 0, desconto = 0;
         try {
             aux = JOptionPane.showInputDialog(null, "Digite o valor da hora de aula");
-            aulahora = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
+            aulahora = Double.parseDouble(aux);
 
             aux = JOptionPane.showInputDialog(null, "Digite o número de aulas dadas por mês");
-            aulames = Double.parseDouble(aux);
             aux = aux.replace(",", ".");
+            aulames = Double.parseDouble(aux);
 
             sbruto = aulahora * aulames;
 
