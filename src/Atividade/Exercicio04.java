@@ -16,8 +16,10 @@ public class Exercicio04 {
 
             } catch (NumberFormatException erro) {
                 JOptionPane.showMessageDialog(null, "Digite somente números !");
+                System.exit(0);
             } catch (NullPointerException erro) {
                 JOptionPane.showMessageDialog(null, "Digite somente números !");
+                System.exit(0);
             }
         }
         res = (valor * -1) + res;

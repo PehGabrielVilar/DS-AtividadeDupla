@@ -49,6 +49,7 @@ public class Exercicio01 {
                     + "\n " + "O seu novo salário é: " + salario);
         } catch (NumberFormatException erro) {
             JOptionPane.showMessageDialog(null, "Digite somente números !");
+            System.exit(0);
         }
 
     }

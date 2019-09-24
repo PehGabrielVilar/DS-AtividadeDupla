@@ -14,6 +14,7 @@ public class Exercicio12 {
             suc = num + 1;
         } catch (NumberFormatException erro) {
             JOptionPane.showMessageDialog(null, "Digite somente números inteiros");
+            System.exit(0);
         }
         JOptionPane.showMessageDialog(null, "O antecessor é " + ant + " e o sucessor é " + suc);
     }

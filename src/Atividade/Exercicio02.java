@@ -29,6 +29,7 @@ public class Exercicio02 {
             }
         } catch (NumberFormatException erro) {
             JOptionPane.showMessageDialog(null, "Digite somente números !");
+            System.exit(0);
         }
 
     }

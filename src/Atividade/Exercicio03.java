@@ -19,6 +19,7 @@ public class Exercicio03 {
             JOptionPane.showMessageDialog(null, "O tamanho do perímetro é: " + resp);
         }catch (NumberFormatException erro) {
             JOptionPane.showMessageDialog(null, "Digite somente números !");
+            System.exit(0);
         }
 
     }
